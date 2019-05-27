@@ -1,0 +1,12 @@
+{
+  "apps": [{
+    "name": "Stoic Buddha's PDFTK Filler",
+    "script": "index.js",
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "cwd": "/home/ubuntu/api",
+    "env": {
+      "NODE_ENV": "dev",
+      "USE_PORT": 3500
+    }
+  }]
+}
