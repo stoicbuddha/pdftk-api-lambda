@@ -1,0 +1,26 @@
+{
+  "name": "pdftk-api",
+  "version": "1.0.0",
+  "description": "An API for manipulating PDF files using pdfTK",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pdftk",
+    "api"
+  ],
+  "author": "Matt Armstrong (stoicbuddha)",
+  "license": "MIT",
+  "dependencies": {
+    "aws-cloudfront-sign": "^2.2.0",
+    "aws-sdk": "^2.463.0",
+    "axios": "^0.18.0",
+    "node-pdftk": "^2.0.2",
+    "nodemon": "^1.19.1",
+    "restify": "^8.3.2",
+    "restify-cors-middleware": "^1.1.1",
+    "restify-jwt-community": "^1.0.13"
+  }
+}

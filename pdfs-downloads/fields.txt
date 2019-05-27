@@ -1,0 +1,486 @@
+---
+FieldType: Text
+FieldName: apellido
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: USCIS
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: primer nombre
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Right
+---
+FieldType: Text
+FieldName: seguro social
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: 2
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes
+---
+FieldType: Button
+FieldName: 3
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes
+---
+FieldType: Button
+FieldName: 4
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes
+---
+FieldType: Text
+FieldName: codigo postal
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: dependents
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: ISN
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: otro apellido
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: direccion
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: ciudad
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: estado
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: correo electronico
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fecha
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: 1
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes
+---
+FieldType: Text
+FieldName: segundo nombre
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: estado civil
+FieldFlags: 131072
+FieldValue:  
+FieldValueDefault:  
+FieldJustification: Left
+FieldStateOption:  
+FieldStateOption: CASADO (married)
+FieldStateOption: CASADO tasa Soltero (married but filing single)
+FieldStateOption: SOLTERO (single)
+---
+FieldType: Text
+FieldName: numero de telephono
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de telephono de casa
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: relacion 1
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: relacion 2
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: nombre de contacto 1
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: nombre de contacto 2
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de telephono de contacto 1
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de movil de contacto 1
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de telephono de contacto 2
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de movil de contacto 2
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: Si, Autiorizo envie
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes
+---
+FieldType: Button
+FieldName: No, Autiorizo envie
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes
+---
+FieldType: Button
+FieldName: No, Autorizo recoger
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes
+---
+FieldType: Text
+FieldName: nombre de contacto - recoger 2
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: nombre de contacto - recoger 1
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de contacto - recoger 1
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: titulo del documento - Lista A2
+FieldFlags: 655360
+FieldValue:  
+FieldValueDefault:  
+FieldJustification: Left
+FieldStateOption:  
+FieldStateOption: ALIEN REGISTRATION RECEIPT CARD
+FieldStateOption: EMPLOYMENT AUTHORIZATION DOCUMENT
+FieldStateOption: FOREIGN PASSPORT W/ I-551 STAMP
+FieldStateOption: FOREIGN PASSPORT W/ I-94/94A
+FieldStateOption: PASSPORT - FEDERATED STATES OF MICRONESIA
+FieldStateOption: PERMANENT RESIDENT CARD
+FieldStateOption: US PASSPORT
+FieldStateOption: US PASSPORT CARD
+---
+FieldType: Text
+FieldName: autoridad emisora - A2
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fecha de expiracion - A2
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de documento - A2
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: titulo del documento - Lista A3
+FieldFlags: 655360
+FieldValue:  
+FieldValueDefault:  
+FieldJustification: Left
+FieldStateOption:  
+FieldStateOption: ALIEN REGISTRATION RECEIPT CARD
+FieldStateOption: EMPLOYMENT AUTHORIZATION DOCUMENT
+FieldStateOption: FOREIGN PASSPORT W/ I-551 STAMP
+FieldStateOption: FOREIGN PASSPORT W/ I-94/94A
+FieldStateOption: PASSPORT - FEDERATED STATES OF MICRONESIA
+FieldStateOption: PERMANENT RESIDENT CARD
+FieldStateOption: US PASSPORT
+FieldStateOption: US PASSPORT CARD
+---
+FieldType: Text
+FieldName: autoridad emisora - A3
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de documento - A3
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fecha de expiracion - A3
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: titulo del documento - Lista A1
+FieldFlags: 655360
+FieldValue:  
+FieldValueDefault:  
+FieldJustification: Left
+FieldStateOption:  
+---
+FieldType: Text
+FieldName: autoridad emisora - 1
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de documento - 1
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fecha de expiracion - 1
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: titulo del documento - Lista B
+FieldFlags: 655360
+FieldValue:  
+FieldValueDefault:  
+FieldJustification: Left
+FieldStateOption:  
+FieldStateOption: CANADIAN DRIVER'S LICENSE
+FieldStateOption: FEDERAL ID CARD
+FieldStateOption: MILITARY DEPENDENT'S ID CARD
+FieldStateOption: NATIVE AMERICAN TRIBAL DOCUMENT
+FieldStateOption: SCHOOL ID
+FieldStateOption: STATE DRIVER'S LICENSE
+FieldStateOption: STATE ID CARD
+FieldStateOption: STATE OR LOCAL GOVERMENT ID CARD
+FieldStateOption: US COAST GAURD MERCHANT MARINER CARD
+FieldStateOption: US MILITARY CARD
+FieldStateOption: VOTER'S REGISTRATION CARD
+---
+FieldType: Text
+FieldName: autoridad emisora - B
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de documento - B
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fecha de expiracion - B
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: titulo del documento - Lista C
+FieldFlags: 655360
+FieldValue:  
+FieldValueDefault:  
+FieldJustification: Left
+FieldStateOption:  
+FieldStateOption:  SOCIAL SECURITY CARD
+FieldStateOption: EMPLOYMENT AUTHORIZATION DOCUMENT
+FieldStateOption: FORM DS-1350
+FieldStateOption: FORM FS-240
+FieldStateOption: FORM FS-545
+FieldStateOption: NATIVE AMERICAN TRIBAL DOCUMENT
+FieldStateOption: ORIGINAL BIRTH CERTIFICATE
+FieldStateOption: US CITIZEN ID CARD | FORM I-197
+---
+FieldType: Text
+FieldName: autoridad emisora - C
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de documento - C
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fecha de expiracion - C
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: informacion adicional
+FieldFlags: 4096
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fecha de experiacion - #4
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de registro extranjero / USCIS
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de I-94
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de pasaporte extranjero
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: pais de emision
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: fecha de nacimiento
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: numero de apartamento
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: soltero
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes
+---
+FieldType: Button
+FieldName: casado
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes
+---
+FieldType: Button
+FieldName: casado (pero soltero)
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Yes
+---
+FieldType: Text
+FieldName: numero de contacto - recoger 2
+FieldFlags: 0
+FieldValue: 
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: CLEAR BUTTON
+FieldNameAlt: CLEAR BUTTON
+FieldFlags: 65536
+FieldValue: Off
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: SAVE &amp; PRINT
+FieldNameAlt: SAVE &amp; PRINT
+FieldFlags: 65536
+FieldValue: Off
+FieldJustification: Left
