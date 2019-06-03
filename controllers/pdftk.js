@@ -95,6 +95,41 @@ const download = async (fileLocation) => {
   })
 }
 
+const parseFdfToJson = (fdfString) => {
+	const fieldsArray = fdfString.split('/Fields [')[1].split('>>]')[0];
+	const lines = fieldsArray.split("\n");
+	const fields = [];
+	lines.forEach((line, i) => {
+		// Make sure we are skipping inputs that aren't text
+		if (line.indexOf("/T ") > -1 && lines[i-1].indexOf("/V ()") < 0) return;
+		if (line.indexOf("/T ") > -1) {
+			const field = line.split("(")[1].split(")")[0];
+			fields.push(field);
+		}
+	});
+	return fields.sort();
+}
+
+const getFields = (fileLocation) => {
+	return new Promise((resolve, reject) => {
+		const dl = download(fileLocation);
+		dl.then(pdfFile => {
+  		const dlPath = rootDir + '/pdfs-downloads/';
+  		const ulPath = rootDir + '/pdfs-output/';
+			pdftk
+		    .input(dlPath + pdfFile)
+		    .generateFdf()
+		    .output(ulPath + pdfFile + "_fdf.txt")
+				.then(buffer => {
+					const fdf = parseFdfToJson(buffer.toString('utf8'));
+		      return resolve(fdf);
+		    })
+		    .catch(e => h.perror(e, reject));
+		})
+		.catch(e => h.perror(e, reject));
+	});
+}
+
 const fill = (fileLocation, data) => {
 	const formattedData = [];
 	data.forEach(d => {
@@ -128,5 +163,6 @@ const fill = (fileLocation, data) => {
 }
 
 module.exports = {
-	fill
+	fill,
+	getFields
 }

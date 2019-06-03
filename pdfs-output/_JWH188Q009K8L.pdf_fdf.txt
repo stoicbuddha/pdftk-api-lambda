@@ -1,0 +1,292 @@
+%FDF-1.2
+%‚„œ”
+1 0 obj 
+<<
+/FDF 
+<<
+/Fields [
+<<
+/V ( )
+/T (titulo del documento - Lista B)
+>> 
+<<
+/V ()
+/T (ciudad)
+>> 
+<<
+/V ()
+/T (numero de apartamento)
+>> 
+<<
+/V /Off
+/T (No, Autiorizo envie)
+>> 
+<<
+/V ()
+/T (numero de pasaporte extranjero)
+>> 
+<<
+/V ()
+/T (fecha)
+>> 
+<<
+/V ()
+/T (fecha de nacimiento)
+>> 
+<<
+/V ()
+/T (apellido)
+>> 
+<<
+/V ()
+/T (numero de registro extranjero / USCIS)
+>> 
+<<
+/V ()
+/T (informacion adicional)
+>> 
+<<
+/V ()
+/T (codigo postal)
+>> 
+<<
+/V /Off
+/T (soltero)
+>> 
+<<
+/V /Off
+/T (Si, Autiorizo envie)
+>> 
+<<
+/V ()
+/T (segundo nombre)
+>> 
+<<
+/V ()
+/T (estado)
+>> 
+<<
+/V ()
+/T (numero de I-94)
+>> 
+<<
+/V /
+/T (SAVE & PRINT)
+>> 
+<<
+/V ()
+/T (numero de telephono)
+>> 
+<<
+/V ( )
+/T (titulo del documento - Lista A1)
+>> 
+<<
+/V ( )
+/T (titulo del documento - Lista A2)
+>> 
+<<
+/V ( )
+/T (titulo del documento - Lista A3)
+>> 
+<<
+/V ()
+/T (numero de telephono de casa)
+>> 
+<<
+/V ()
+/T (autoridad emisora - A3)
+>> 
+<<
+/V ()
+/T (autoridad emisora - A2)
+>> 
+<<
+/V ()
+/T (USCIS)
+>> 
+<<
+/V ()
+/T (fecha de expiracion - A3)
+>> 
+<<
+/V ()
+/T (numero de documento - A2)
+>> 
+<<
+/V ()
+/T (fecha de expiracion - A2)
+>> 
+<<
+/V ()
+/T (numero de documento - A3)
+>> 
+<<
+/V ( )
+/T (estado civil)
+>> 
+<<
+/V /Off
+/T (4)
+>> 
+<<
+/V /Off
+/T (3)
+>> 
+<<
+/V /Off
+/T (2)
+>> 
+<<
+/V /Off
+/T (1)
+>> 
+<<
+/V ()
+/T (fecha de experiacion - #4)
+>> 
+<<
+/V ()
+/T (ISN)
+>> 
+<<
+/V ()
+/T (primer nombre)
+>> 
+<<
+/V ()
+/T (fecha de expiracion - 1)
+>> 
+<<
+/V ()
+/T (correo electronico)
+>> 
+<<
+/V ()
+/T (numero de contacto - recoger 2)
+>> 
+<<
+/V ()
+/T (numero de contacto - recoger 1)
+>> 
+<<
+/V /
+/T (CLEAR BUTTON)
+>> 
+<<
+/V ()
+/T (numero de telephono de contacto 2)
+>> 
+<<
+/V /Off
+/T (No, Autorizo recoger)
+>> 
+<<
+/V ()
+/T (numero de telephono de contacto 1)
+>> 
+<<
+/V ()
+/T (autoridad emisora - C)
+>> 
+<<
+/V ()
+/T (numero de documento - C)
+>> 
+<<
+/V ()
+/T (autoridad emisora - B)
+>> 
+<<
+/V ()
+/T (numero de documento - B)
+>> 
+<<
+/V /Off
+/T (casado \(pero soltero\))
+>> 
+<<
+/V ()
+/T (fecha de expiracion - B)
+>> 
+<<
+/V ()
+/T (dependents)
+>> 
+<<
+/V ()
+/T (pais de emision)
+>> 
+<<
+/V ()
+/T (fecha de expiracion - C)
+>> 
+<<
+/V /Off
+/T (casado)
+>> 
+<<
+/V ()
+/T (nombre de contacto 2)
+>> 
+<<
+/V ()
+/T (numero de movil de contacto 2)
+>> 
+<<
+/V ()
+/T (nombre de contacto 1)
+>> 
+<<
+/V ()
+/T (numero de movil de contacto 1)
+>> 
+<<
+/V ()
+/T (nombre de contacto - recoger 2)
+>> 
+<<
+/V ()
+/T (nombre de contacto - recoger 1)
+>> 
+<<
+/V ()
+/T (seguro social)
+>> 
+<<
+/V ()
+/T (direccion)
+>> 
+<<
+/V ()
+/T (autoridad emisora - 1)
+>> 
+<<
+/V ()
+/T (numero de documento - 1)
+>> 
+<<
+/V ()
+/T (otro apellido)
+>> 
+<<
+/V ()
+/T (relacion 1)
+>> 
+<<
+/V ()
+/T (relacion 2)
+>> 
+<<
+/V ( )
+/T (titulo del documento - Lista C)
+>>]
+>>
+>>
+endobj 
+trailer
+
+<<
+/Root 1 0 R
+>>
+%%EOF

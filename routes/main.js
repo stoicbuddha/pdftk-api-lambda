@@ -3,9 +3,27 @@ const pdftk = require("../controllers/pdftk"),
 
 module.exports = (server) => {
 
+	/*** GET METHODS ***/
+
+	// Fill a form and return the link to the filled form
+	server.get('/fields', (req, res) => {
+		const {params} = req;
+		if (!params.file) {
+			return res.send(400, h.failureFormat({message: "Missing parameters", params_received: params}));
+		}
+		pdftk.getFields(params.file)
+			.then(fields => {
+				return res.send(200, h.successFormat({fields}));
+			})
+			.catch(err => {
+				console.log({err})
+				return res.send(500, h.failureFormat({message: err}));
+			})
+	});
+
 	/*** POST METHODS ***/
 
-	// Save an answer
+	// Fill a form and return the link to the filled form
 	server.post('/fill', (req, res) => {
 		const {params} = req;
 		if (!params.file || !params.fields || params.fields.length < 1) {

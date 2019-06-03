@@ -44,7 +44,7 @@ server.use(restify.plugins.jsonp());
 // server.use(jwt({ secret: config.jwt.secret}).unless({path: ['/users/register', '/users/authenticate', '/users/passwordreset']}));
 
 // Bring in our routes
-require('./routes/fill')(server);
+require('./routes/main')(server);
 
 server.listen(config.port, function() {
   console.log('%s listening at %s', server.name, server.url);
