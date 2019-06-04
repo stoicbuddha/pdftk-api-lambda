@@ -96,14 +96,19 @@ const download = async (fileLocation) => {
 }
 
 const parseFdfToJson = (fdfString) => {
-	const fieldsArray = fdfString.split('/Fields [')[1].split('>>]')[0];
-	const lines = fieldsArray.split("\n");
+	const fieldsUnparsed = fdfString.split('/Fields [')[1].split('>>]')[0];
+	const fieldLines = fieldsUnparsed.split("<<").map(arr => {
+		return arr.split(">>")[0];
+	});
+
+	const lines = fieldLines.filter(line => {
+		// Make sure we are only getting actual, inputtable values, instead of buttons and radios and such
+		return line.indexOf('/V ()') > -1;
+	});
 	const fields = [];
 	lines.forEach((line, i) => {
-		// Make sure we are skipping inputs that aren't text
-		if (line.indexOf("/T ") > -1 && lines[i-1].indexOf("/V ()") < 0) return;
 		if (line.indexOf("/T ") > -1) {
-			const field = line.split("(")[1].split(")")[0];
+			const field = line.split("/T (")[1].split(")")[0];
 			fields.push(field);
 		}
 	});
