@@ -1,4 +1,4 @@
 node_modules/
 package-lock.json
-pdfs-downloads/*.pdf
-pdfs-output/*.pdf
+pdfs-downloads/*
+pdfs-output/*
