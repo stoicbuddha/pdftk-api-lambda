@@ -1,11 +1,15 @@
+require('pdftk-lambda');
+
+const PDFTK_PATH = process.cwd() + '/node_modules/pdftk-lambda/bin/pdftk';
+
 const rootDir = process.cwd(),
 			config = require(rootDir + "/config"),
 			pdftk = require('node-pdftk'),
 			axios = require('axios'),
 			fs = require('fs'),
 			h = require(rootDir + '/helpers'),
-    	aws = require('aws-sdk'),
-			s3 = new aws.S3({
+    	aws = require('aws-sdk');
+			const s3 = new aws.S3({
 			    // Your SECRET ACCESS KEY from AWS should go here,
 			    // Never share it!
 			    // Setup Env Variable, e.g: process.env.SECRET_ACCESS_KEY
@@ -22,7 +26,11 @@ const rootDir = process.cwd(),
 			  keypairId: config.aws.cfKey,
 			  // Optional - this can be used as an alternative to privateKeyString
 			  privateKeyPath: rootDir + '/security/url-signing.pem'
-			}
+			};
+			console.log({PDFTK_PATH})
+			pdftk.configure({
+		    bin: PDFTK_PATH
+			});
 
 /**
  * Upload file to S3
@@ -37,13 +45,14 @@ const upload = (fileData, bucket, dir) => {
 		const path = fileData.path,
 					type = fileData.type,
 					name = fileData.name,
+					buffer = fileData.buffer,
 					folder = dir ? dir + "/" : "";
-	  fs.readFile(path + name, (err, data) => {
-	     if (err) return reject(err);
+	  // fs.readFile(path + name, (err, data) => {
+	  //    if (err) return reject(err);
 	     const params = {
 	         Bucket: bucket || config.aws.assets_bucket,
 	         Key: folder + name,
-	         Body: data,
+	         Body: buffer,
 	         ContentType: type,
 	         ACL: "public-read"
 	     };
@@ -63,7 +72,7 @@ const upload = (fileData, bucket, dir) => {
 	         	folder
 	         })
 	     });
-	  });
+	  // });
 	});
 };
 
@@ -78,13 +87,13 @@ const download = async (fileLocation) => {
 	const fileName = '_' + (Date.now().toString(36) + Math.random().toString(36).substr(2, 5)).toUpperCase() + ".pdf";
   const path = rootDir + "/pdfs-downloads/" + fileName;
   const writer = fs.createWriteStream(path)
+  console.log({fileLocation})
 
   const response = await axios({
     url: fileLocation,
     method: 'GET',
     responseType: 'stream'
   })
-
   response.data.pipe(writer)
 
   return new Promise((resolve, reject) => {
@@ -117,21 +126,19 @@ const parseFdfToJson = (fdfString) => {
 
 const getFields = (fileLocation) => {
 	return new Promise((resolve, reject) => {
-		const dl = download(fileLocation);
-		dl.then(pdfFile => {
-  		const dlPath = rootDir + '/pdfs-downloads/';
-  		const ulPath = rootDir + '/pdfs-output/';
 			pdftk
-		    .input(dlPath + pdfFile)
+		    .input(fileLocation)
 		    .generateFdf()
-		    .output(ulPath + pdfFile + "_fdf.txt")
+		    .output()
 				.then(buffer => {
 					const fdf = parseFdfToJson(buffer.toString('utf8'));
+					console.log({fdf})
 		      return resolve(fdf);
 		    })
-		    .catch(e => h.perror(e, reject));
-		})
-		.catch(e => h.perror(e, reject));
+		    .catch(e => {
+		    	console.log("fields failed");
+		    	h.perror(e, reject)
+		    });
 	});
 }
 
@@ -140,21 +147,19 @@ const fill = (fileLocation, data) => {
 	data.forEach(d => {
 		formattedData[d.name] = d.data;
 	})
+	const reFormattedData = Object.assign({}, formattedData);
 	return new Promise((resolve, reject) => {
-		const dl = download(fileLocation);
-		dl.then(pdfFile => {
-  		const dlPath = rootDir + '/pdfs-downloads/';
-  		const ulPath = rootDir + '/pdfs-output/';
 			pdftk
-		    .input(dlPath + pdfFile)
-		    .fillForm(formattedData)
+		    .input(fileLocation)
+		    .fillForm(reFormattedData)
 		    .flatten()
-		    .output(ulPath + pdfFile)
+		    .output()
 		    .then(buffer => {
 		      upload({
 		      	path: ulPath,
 		      	type: "application/pdf",
-		      	name: pdfFile
+		      	name: pdfFile,
+		      	buffer
 		      }, null, config.aws.dir)
 		      	.then(uploaded => {
 		      		return resolve(uploaded);
@@ -162,8 +167,6 @@ const fill = (fileLocation, data) => {
 		      	.catch(e => h.perror(e, reject));
 		    })
 		    .catch(e => h.perror(e, reject));
-			})
-			.catch(e => h.perror(e, reject));
 	});
 }
 

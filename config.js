@@ -1,6 +1,6 @@
 const config = {
 	"dev": {
-		"port": 3500,
+		"port": 3000,
 		"jwt": {
 			"secret": "ONHM@m88dgJdmzIM8s8l8aq7WkUHGVcdA$TreYT06@30Y1Odpc"
 		},

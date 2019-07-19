@@ -16,8 +16,9 @@ module.exports = (server) => {
 				return res.send(200, h.successFormat({fields}));
 			})
 			.catch(err => {
-				console.log({err})
-				return res.send(500, h.failureFormat({message: err}));
+				const reason = err && err.response && err.response.status ? err.response.status + " - " + err.response.statusText : err;
+				console.log({reason, env: process.env})
+				return res.send(500, h.failureFormat({message: "Could not download PDF", reason}));
 			})
 	});
 

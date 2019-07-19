@@ -1,3 +1,5 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 const restify = require('restify'),
 	  plugins = require('restify').plugins,
 	  env = process.env.NODE_ENV,
